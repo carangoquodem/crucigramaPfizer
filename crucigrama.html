@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/crucigrama.css">
+    <link rel="stylesheet" type="text/css" href="./pluging/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="./pluging/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="./pluging/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Crucigrama</title>
+</head>
+<body>
+
+    <div  class="body-crucigrama">
+
+        <div id="puzzle_container">
+            <table id="puzzle">
+            </table>
+        </div>
+        
+        <div id="hints_container">
+            <!-- <h3>Vertical</h3>
+                <div id="vertical_hints_container"></div>
+            <h3>Horizontal</h3>
+                <div id="horizontal_hints_container"></div> -->
+        </div>
+        
+        <div id="buttons_container">
+            <!-- <button id="clear_all">Limpiar todo</button> -->
+            <button id="solve">Resolver</button>
+            
+        </div>
+
+    </div>
+
+    <div class="modal-crucigrama">
+
+        <div class="modal fade" id="modalcrucigrama" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Escriba la respuesta</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="recipient-name" autofocus>
+                      <label id="label-description" class="col-form-label"></label>
+                      <label id="label-error" class="col-form-label row"></label>
+                      <input type="text" class="form-control" hidden id="recipient-ntmberline">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <!-- <button type="button" class="btn btn-secondary" id="clue">Pista</button> -->
+                  <button type="button" class="btn btn-primary" id="btn_insert">Insertar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+    <div class="modal-endgame">
+
+      <div class="modal fade" id="modalendgame" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Escriba la respuesta</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label id="label-info" class="col-form-label row">Juego terminado</label>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <script src="./script/jquery/jquery-3_0_6.min.js"></script>
+    <script src="./script/Variables.js"></script>
+    <script src="./script/crucigrama.js"></script>
+    <script src="./pluging/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./pluging/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
